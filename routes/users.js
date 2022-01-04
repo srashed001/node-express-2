@@ -67,7 +67,7 @@ router.get(
  */
 
 // ***************************************************************************
-//  FIXES TEST BUG #2
+//  FIXES BUG #2
 router.patch(
   "/:username",
   authUser,
@@ -85,7 +85,7 @@ router.patch(
       let fields = { ...req.body };
       delete fields._token;
 
-      // FIXES TEST BUG #2
+      // FIXES BUG #2
       const result = jsonschema.validate(fields, userUpdateSchema);
       if (!result.valid) {
         let listOfErrors = result.errors.map((error) => error.stack);

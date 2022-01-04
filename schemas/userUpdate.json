@@ -1,0 +1,31 @@
+{
+    "title": "userUpdate schema",
+    "type": "object",
+    "properties": {
+        "first_name": {
+            "examples": [
+                "Sam"
+            ],
+            "type": "string"
+        },
+        "last_name": {
+            "examples": [
+                "Rush"
+            ],
+            "type": "string"
+        },
+        "phone": {
+            "examples": [
+                "555-5555"
+            ],
+            "type": "string"
+        },
+        "email": {
+            "examples": [
+                "u@umail.com"
+            ],
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

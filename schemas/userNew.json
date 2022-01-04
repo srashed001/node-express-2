@@ -1,0 +1,33 @@
+{
+    "title": "userUpdate schema",
+    "type": "object",
+    "properties": {
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "username",
+        "first_name",
+        "last_name",
+        "password",
+        "email",
+        "phone"
+      ]
+}
